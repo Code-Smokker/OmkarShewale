@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="space-y-6">
           <div>
             <h1 className="text-3xl font-bold mb-1">Omkar Shewale</h1>
-            <p className="text-xl text-muted-foreground mb-2">@Code-Maverick-007</p>
+            <p className="text-xl text-muted-foreground mb-2">@code.smokker</p>
             <p className="text-lg mb-4">Crafting scalable web apps & exploring the future of tech.</p>
             <div className="flex flex-wrap gap-2 mb-6">
               <Badge variant="outline" className="px-3 py-1">

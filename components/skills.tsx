@@ -15,7 +15,9 @@ import {
   SiGit, 
   SiLinux, 
   SiVite, 
-  SiNextdotjs 
+  SiNextdotjs, 
+  SiNumpy,
+  SiPandas
 } from "react-icons/si"
 
 export default function Skills() {
@@ -105,7 +107,26 @@ export default function Skills() {
       color: "#005571", 
       level: 65,
       icon: <SiNextdotjs className="w-4 h-4" />
-    }
+    },
+    { 
+      name: "Python", 
+      color: "#005571", 
+      level: 60,
+      icon: <SiPython className="w-4 h-4" />
+    },
+    { 
+      name: "Numpy", 
+      color: "#6e5494", 
+      level: 65,
+      icon: <SiNumpy className="w-4 h-4" />
+    },
+    { 
+      name: "Pandas", 
+      color: "#6e5494", 
+      level: 60,
+      icon: <SiPandas className="w-4 h-4" />
+    },
+    
   ]
   
   return (

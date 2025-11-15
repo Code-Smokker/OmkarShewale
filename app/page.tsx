@@ -6,6 +6,8 @@ import ContributionGraph from "@/components/contribution-graph"
 import Skills from "@/components/skills"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import Timeline from "@/components/timeline"
+import OpenSource from "@/components/open-source"
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
         <Hero />
         <PinnedRepos />
         <ContributionGraph />
+        <Timeline />
         <Skills />
+        <OpenSource />
         <Contact />
       </div>
       <Footer />

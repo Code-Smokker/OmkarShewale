@@ -7,12 +7,9 @@ export default function ContributionGraph() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    // Simulate loading delay
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setLoading(false)
     }, 1000)
-
-    return () => clearTimeout(timer)
   }, [])
 
   return (
@@ -32,14 +29,15 @@ export default function ContributionGraph() {
         ) : error ? (
           <div className="text-center text-red-500">{error}</div>
         ) : (
-          <div className="flex flex-col items-center justify-center">
-            {/* GitHub Contribution Graph */}
-            <img
-              src="https://github-readme-activity-graph.vercel.app/graph?username=Code-Maverick-007&bg_color=0d1117&color=ffffff&line=00e676&point=ffffff&area=true&hide_border=true"
-              alt="GitHub Contribution Graph"
-              className="w-full max-w-3xl rounded-lg"
-            />
-          </div>
+          <>
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src="https://github-readme-activity-graph.vercel.app/graph?username=Code-Smokker&bg_color=ffcfe9&color=9e4c98&line=9e4c98&point=403d3d&area=true&hide_border=true"
+                alt="GitHub Activity Graph"
+                className="w-full max-w-3xl rounded-lg"
+              />
+            </div>
+          </>
         )}
       </div>
     </section>
